@@ -14,6 +14,8 @@ module.exports = function(grunt) {
     // Vigila los cambios que se efectuan en los archivos y ejecuta
     // las tareas asignadas
     watch: {
+      // Esto nos permite que el navegador se recargue con cada cambio
+      // que hagamos en el código
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
