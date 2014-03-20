@@ -25,3 +25,16 @@ $ sudo npm install -g stylus
 $ sudo npm install -g grunt
 $ sudo npm install -g grunt-cli
 ```
+
+##Ejecución
+Para arrancar el proyecto, primero necesitamos instalar las dependencias de
+desarrollo que hemos definido en el `package.json` lo hacemos con
+```
+$ npm install
+```
+Entonces ya podemos correr el servidor y empezar a desarrollar el frontend e ir visualizando los cambios, lo hacemos con la tarea por defecto de `Grunt`
+```
+$ grunt
+```
+Esto nos abrirá por defecto una ventana del navegador en la URL [http://0.0.0.0:9000](http://0.0.0.0:9000) y gracias a `livereload` podemos ver los cambios son necesidad de recargar la
+página
