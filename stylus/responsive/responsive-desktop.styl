@@ -1,0 +1,51 @@
+@media screen and (min-width:1000px)
+
+	body
+		background gris_mas_claro
+
+	.button-menu
+		display none
+
+	.playing
+		padding-top 1.3em
+		&.large
+			margin 0 auto
+			width 62.5em
+			overflow hidden
+
+	.menu
+		display block
+		background gris_mas_claro
+		overflow hidden
+		border-top 1px solid gris_claro
+
+		.item
+			float left
+			list-style none
+
+			a
+				color gris_oscuro
+				cursor pointer
+				display block
+				padding 1em
+				text-transform uppercase
+				border-top 5px solid transparent
+				transition .3s border-top
+				&:hover
+					border-top 5px solid gris_claro
+
+	.music
+		width 32.5em
+		float left
+
+		.description
+			display none
+
+	.header
+		height auto
+		border none
+		.title
+			display none
+	.logo
+	.playlist
+		display block

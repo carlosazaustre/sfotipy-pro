@@ -1,6 +1,9 @@
+@import "nib"
+
 @import "normalize"
 @import "fonts"
 @import "colors"
+@import "animations"
 
 a
 	text-decoration none
@@ -14,6 +17,10 @@ figure
 
 img
 	vertical-align top
+
+ul
+	margin 0
+	padding 0
 
 //buttons
 .button-menu
@@ -32,7 +39,7 @@ img
 .action
 	color white
 	font-size 1.2em
-	margin-right 1.5em
+	margin-right .5em
 	&:last-child
 		margin-right 0
 	&.gray
@@ -80,32 +87,53 @@ img
 .padding-tb
 	padding 1em 0
 
+.left
+	float left
+
+.right
+	float right
+
+.wrap
+	width 1000px
+
+.round
+	border-radius 50%
+	overflow hidden
+
 .progress
 	margin 1em 0
 	position relative
+
 	.min
 	.max
 		font-size .8em
 		position absolute
 		top -5px
+
 	.min
 		left 0
+
 	.max
 		right 0
+
 	.total
 		background gris_claro
 		border-radius 5px
 		height 5px
 		margin 0 auto
 		width 75%
+
 	.state
+		animation 10s state infinite linear
 		background rojo
 		border-radius 5px
 		height 5px
 		width 30%
 		position relative
+		width 30%
 
 	.circle
+		animation 1s circle infinite
 		background gris_oscuro
 		border-radius 50%
 		height 10px
@@ -116,6 +144,7 @@ img
 
 .header
 	height 3.5em
+
 	.title
 		font-size 1.1em
 		line-height 3.5em
@@ -129,6 +158,7 @@ img
 	margin-right 1em
 	text-align left
 	width 8rem
+
 	&:nth-child(even)
 		margin-right 0
 	p
@@ -137,3 +167,68 @@ img
 .playing
 	&.small
 		width 20em
+		margin 0 auto
+
+.input
+	border 1px solid gris_claro
+	height 2.5em
+	border-radius 5px
+	padding 0 1em 0 2em
+
+.search-icon
+	position absolute
+	left .5em
+	top .8em
+	color gris_claro
+
+.close-icon
+	position absolute
+	top .5em
+	color gris_claro
+	right .5em
+	font-size 1.2em
+
+.playlist
+	border-left 1px solid gris_claro
+	padding 0 2em
+	width 22em
+	display none
+
+	.list
+		list-style none
+
+	.item
+		padding 1em 0
+
+	.action
+		font-size .8em
+
+.isotipo
+	width 122px
+
+.logo
+	background white
+	padding 1.3em 0
+	display none
+	clearfix()
+
+.avatar
+	width 38px
+	height 38px
+
+.username
+	color gris_claro
+	position relative
+	top 9px
+	margin-left .5em
+
+	&:after
+		border-left 7px solid transparent
+		border-right 7px solid transparent
+		border-top 9px solid gris_claro
+		content ""
+		display inline-block
+		margin-left .4em
+
+@import 'responsive/responsive-tablet'
+@import 'responsive/responsive-desktop'
