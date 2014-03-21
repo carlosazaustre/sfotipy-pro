@@ -34,6 +34,9 @@ module.exports = function(grunt) {
 
     // Automatiza el proceso de compilado de Stylus a CSS y su minificación
     stylus: {
+      options: {
+        use: [require('nib')]
+      },
       compile: {
         options: {
           paths: ['./stylus/{,*/}*.styl'],

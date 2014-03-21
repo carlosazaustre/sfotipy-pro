@@ -12,6 +12,7 @@
     "grunt-contrib-stylus": "*",
     "grunt-contrib-imagemin": "*",
     "grunt-contrib-watch": "*",
-    "load-grunt-tasks": "*"
+    "load-grunt-tasks": "*",
+    "nib": "*"
   }
 }
